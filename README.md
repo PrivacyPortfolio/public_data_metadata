@@ -43,15 +43,25 @@ public-data-metadata/
 │   └── sources.yaml              # Optional: provenance for external storage
 │
 ├── datasets/
+
 │   ├── complaints_2019.md        # Dataset detail pages (auto-rendered)
+
 │   ├── complaints_2020.md
+
 │   ├── evidence_archive.md
+
 │   └── ...
+
 │
+
 └── docs/
+
 ├── index.html                # GitHub Pages homepage
+
 ├── dataset.html              # Template for dataset detail pages
+
 ├── styles.css                # Site styling
+
 └── _config.yml               # Jekyll configuration
 
 ---
