@@ -1,1 +1,38 @@
-placeholder
+---
+layout: default
+title: Dataset Details
+---
+
+{% assign dataset_id = page.dataset %}
+{% assign dataset = site.data.dataset_catalog.datasets | where: "id", dataset_id | first %}
+
+<h2>{{ dataset.title }}</h2>
+
+<div class="details-panel">
+  <div class="details-grid">
+    <div>
+      <p><strong>ID:</strong> {{ dataset.id }}</p>
+      <p><strong>Version:</strong> {{ dataset.version }}</p>
+      <p><strong>Records:</strong> {{ dataset.records }}</p>
+      <p><strong>Updated:</strong> {{ dataset.updated }}</p>
+    </div>
+    <div>
+      <p><strong>Tags:</strong> {{ dataset.tags | join: ", " }}</p>
+      <p><strong>Schema:</strong> {{ dataset.schema }}</p>
+    </div>
+  </div>
+
+  <h3>Resources</h3>
+  <ul>
+    {% for resource in dataset.resources %}
+    <li>{{ resource }}</li>
+    {% endfor %}
+  </ul>
+
+  <h3>External Access</h3>
+  <div class="dataset-actions">
+    <a href="{{ dataset.drive }}" class="btn primary">Google Drive Folder</a>
+    <a href="{{ dataset.path }}" class="btn">Dataset Folder</a>
+  </div>
+</div>
+
