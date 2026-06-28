@@ -1,1 +1,7 @@
-placeholder.yaml
+sources:
+  - id: external_drive
+    description: "External storage location used for hosting datasets and evidence."
+    type: "external"
+    location: "drive"
+    url: "https://drive.google.com/drive/folders/YOUR_FOLDER_ID"
+
