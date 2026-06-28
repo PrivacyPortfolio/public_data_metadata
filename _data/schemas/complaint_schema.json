@@ -1,1 +1,13 @@
-placeholder.json
+{
+  "title": "Complaint Record Schema",
+  "type": "object",
+  "properties": {
+    "complaint_id": { "type": "string" },
+    "date_filed": { "type": "string", "format": "date" },
+    "agency": { "type": "string" },
+    "summary": { "type": "string" },
+    "status": { "type": "string" },
+    "evidence_path": { "type": "string" }
+  },
+  "required": ["complaint_id", "date_filed", "agency", "status"]
+}
