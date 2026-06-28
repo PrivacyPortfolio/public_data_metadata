@@ -1,0 +1,43 @@
+datasets:
+  - id: complaints_2019
+    title: Complaints Filed (2019)
+    description: Complaints filed with agencies in 2019.
+    version: "1.0.0"
+    records: 1204
+    updated: "2020"
+    tags: ["complaints", "filings"]
+    path: "/datasets/complaints/2019/"
+    drive: "https://drive.google.com/your-folder"
+    resources:
+      - complaints_2019.csv
+      - complaints_2019.json
+      - evidence/
+    schema: complaint_schema.json
+
+  - id: complaints_2020
+    title: Complaints Filed (2020)
+    description: Complaints filed with agencies in 2020.
+    version: "1.0.1"
+    records: 1332
+    updated: "2021"
+    tags: ["complaints", "filings"]
+    path: "/datasets/complaints/2020/"
+    drive: "https://drive.google.com/your-folder"
+    resources:
+      - complaints_2020.csv
+      - complaints_2020.json
+      - evidence/
+    schema: complaint_schema.json
+
+  - id: evidence_archive
+    title: Evidence Archive
+    description: Raw evidence files including emails, letters, screenshots, PDFs.
+    version: "3.0.0"
+    records: "1900+ files"
+    updated: "2026"
+    tags: ["evidence"]
+    path: "/datasets/evidence/"
+    drive: "https://drive.google.com/your-folder"
+    resources:
+      - evidence/
+    schema: evidence_schema.json
